@@ -1,0 +1,107 @@
+.main-caro {
+  @apply h-screen;
+  .swiper-slide {
+    @apply h-full;
+
+    .single-slide {
+      @apply h-screen before:content-[''] before:absolute before:top-0 before:z-10 before:left-0 before:w-full before:h-full before:bg-black-500/70;
+    }
+  }
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-family: unset !important;
+    @apply rtl:rotate-180;
+  }
+  .swiper-button-next:after {
+    content: url("https://api.iconify.design/heroicons-outline/chevron-right.svg?color=white&width=24");
+  }
+  .swiper-button-prev:after {
+    content: url("https://api.iconify.design/heroicons-outline/chevron-left.svg?color=white&width=24");
+  }
+  .swiper-pagination {
+    
+    @apply z-50 bottom-32 -translate-y-10 md:translate-y-0;
+  }
+  .swiper-pagination-bullet {
+    height: 10px;
+    width: 10px;
+    z-index: 1000;
+    top: 50%;
+    @apply rounded-full bg-coffee-50 opacity-100 duration-300;
+    &.swiper-pagination-bullet-active {
+      @apply bg-opacity-100 bg-coffee-800 w-8;
+    }
+  }
+}
+
+
+
+
+.main-caro-1 {
+  @apply h-max w-full;
+
+  .swiper-slide {
+    @apply h-max pb-20 flex justify-center items-center;
+  }
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-family: unset !important;
+    @apply rtl:rotate-180;
+  }
+  .swiper-button-next:after {
+    content: url("https://api.iconify.design/heroicons-outline/chevron-right.svg?color=white&width=24");
+  }
+  .swiper-button-prev:after {
+    content: url("https://api.iconify.design/heroicons-outline/chevron-left.svg?color=white&width=24");
+  }
+  .swiper-pagination {
+    
+    @apply z-50 md:translate-y-0;
+  }
+  .swiper-pagination-bullet {
+    height: 10px;
+    width: 10px;
+    z-index: 1000;
+    top: 50%;
+    @apply rounded-full bg-coffee-50 opacity-100 duration-300;
+    &.swiper-pagination-bullet-active {
+      @apply bg-opacity-100 bg-coffee-800 w-8;
+    }
+  }
+}
+
+.main-caro-2 {
+  @apply h-max w-full;
+
+  .swiper-wrapper {
+    @apply items-center;
+    .swiper-slide {
+      @apply h-max pb-20 self-center;
+    }
+  }
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-family: unset !important;
+    @apply rtl:rotate-180;
+  }
+  .swiper-button-next:after {
+    content: url("https://api.iconify.design/heroicons-outline/chevron-right.svg?color=white&width=24");
+  }
+  .swiper-button-prev:after {
+    content: url("https://api.iconify.design/heroicons-outline/chevron-left.svg?color=white&width=24");
+  }
+  .swiper-pagination {
+    
+    @apply z-50 md:translate-y-0;
+  }
+  .swiper-pagination-bullet {
+    height: 10px;
+    width: 10px;
+    z-index: 1000;
+    top: 50%;
+    @apply rounded-full bg-coffee-50 opacity-100 duration-300;
+    &.swiper-pagination-bullet-active {
+      @apply bg-opacity-100 bg-coffee-800 w-8;
+    }
+  }
+}
